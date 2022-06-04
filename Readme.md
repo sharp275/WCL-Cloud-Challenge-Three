@@ -3,44 +3,34 @@ Whizlabs Challenge League
 </h1>
 
 <h2 align="center">
-Challenge Lab Two
+Challenge Lab Three
 
-Elastic Beanstalk and RDS
+Inter-Region Instance Migration - EC2 Challenge
 </h2>
 
 ---
 
-WhizLabs is running a cloud challenge between May and July 2022.  The challenge is to complete various tasks in either AWS, GCP, or Azure to test cloud skills.  Following is my solution to challenge lab two.
+WhizLabs is running a cloud challenge between May and July 2022.  The challenge is to complete various tasks in either AWS, GCP, or Azure to test cloud skills.  Following is my solution to challenge lab three.
 
 ---
 <h3>From Whizlabs</h3>
 
-Cloud Challenge Details
+[Cloud Challenge Details](inst.jpeg)
 
->In this lab challenge, your AWS Elastic Beanstalk, Amazon RDS MySQL and AWS EC2 skills are put to the test. You'll be given a requirement and you have to reach it using your knowledge of Amazon Elastic Beanstalk and other AWS services. The Lab Challenge helps you understand the real-time scenarios.\
->A company XYZ is deploying a new web application. As a part of the infrastructure, they need a database for their testing environment. Now your challenge is to deploy and manage a simple Java application in the AWS cloud and will add a new database using Beanstalk Environment Configuration. 
->In this lab challenge, your AWS Elastic Beanstalk, Amazon RDS MySQL and AWS EC2 skills are put to the test. You'll be given a requirement and you have to reach it using your knowledge of Amazon Elastic Beanstalk and other AWS services. The Lab Challenge helps you understand the real-time scenarios.
-        A company XYZ is deploying a new web application. As a part of the infrastructure, they need a database for their testing environment. Now your challenge is to deploy and manage a simple Java application in the AWS cloud and will add a new database using Beanstalk Environment Configuration. 
->1.	Create an Elastic Beanstalk Application with Java platform.
->2.	After creation copy the application URL and paste it in browser to test the application
->3.	Add MySQL Database to Beanstalk Environment with
->     1.	Engine Version: 5.7.22
->     2. Instance class: db.t2.micro
->     3.	Storage: 5GB
->     4.	Enter Username and Password
->     5.	Retention: Choose Delete
->     6.	Availability: Choose Low (one AZ)
->4.	Edit Security group of RDS 
->     1. Click on DB identifier name and in VPC Security groups of RDS Edit inbound rules as Type: MySQL/Aurora and Source as Anywhere-IPv4
->5.	Test the RDS Database Connection by using RDS Endpoint 
->6.	Connect RDS Endpoint from local Linux/ios machine using syntax: mysql -u <username> -p -h <rds endpoint>
->7.	Connect RDS Endpoint from local windows machine using MySQL Workbench by clicking on MySQL Connections 
->     1.	Connection name: Enter Beanstalk Database
->     1.	Connection method: Select Standard (TCP/IP)
->     2.	Hostname: Enter Database Endpoint
->     3.	Port: Enter 3306
->     4.	Username: Enter Username
->     5.	Password: Enter Password
+>Your company has started using AWS for one of their clients, and the primary condition is having a copy of the complete project setup available in an emergency.  For this requirement, you create a snapshot of the primary system and copy it to another region.
+In this challenge, you will use the AWS Management Console to complete the tasks that result in provisioning infrastructure to fulfill your company's requirements.\
+>Follow the instructions given below to work on the challenge.
+>1.	Create an Amazon EC2 Instance in N.Virginia region.
+>2.	Select Amazon Linux 2 AMI and t2.micro instance type.
+>3.	SSH into the EC2 Instance and host a HTML file named test.html in the EC2 root folder with exact text shown below
+>     - Whizlabs Test Page
+>1.	To Perform SSH operation
+>     - Windows Users use Putty Software.
+>     - Linux/Mac Users use Terminal.
+>2.	Migrate the N.Virginia EC2 Instance to Mumbai region using EC2 snapshot.
+>3.	Launch an EC2 Instance in Mumbai region by creating a Custom AMI from the snapshot with default configurations.
+>4.	Test the HTML file hosted in Mumbai EC2 Instance.
+
 
 
 
@@ -48,54 +38,90 @@ Cloud Challenge Details
 
 <h3>1. Create an Elastic Beanstalk application.</h3>
 
-Login into AWS and search/choose *Elastic Beanstalk*.
-
-In Elastic Beanstalk, click *Create Application*.
+Login into AWS and search/choose *EC2*.
 
 <p align="center">
-  <img width="800" src="create application.jpg">
+  <img width="800" src="AWS EC2 choose.jpeg">
+</p>
+
+In EC2, click *Launch instance/launch instance*.
+
+<p align="center">
+  <img width="800" src="launch instance.jpg">
 </p>
 
 <p align="center">
-  <img width="800" src="create web app.jpg">
+  <img width="800" src="launch instance 2.jpeg">
 </p>
 
 <p align="center">
-  <img width="800" src="create application 2.jpg">
+  <img src="create key pair.jpg">
 </p>
 
 <p align="center">
-  <img width="800" src="add database.jpg">
+  <img width="800" src="launch instance 3.jpg">
 </p>
 
 <p align="center">
-  <img width="800" src="create application 3.jpg">
+  <img src="ssh.jpg">
+</p>
+
+Code block
+
+<p align="center">
+  <img width="800" src="create snapshot.jpg">
 </p>
 
 <p align="center">
-  <img width="800" src="wait 1.jpg">
+  <img width="800" src="create snapshot 2.jpeg">
 </p>
 
 <p align="center">
-  <img width="800" src="success.jpg">
+  <img width="800" src="create snapshot 3.jpeg">
 </p>
 
 <p align="center">
-  <img width="800" src="security group.jpg">
+  <img width="800" src="create snapshot 4.jpeg">
 </p>
 
 <p align="center">
-  <img width="800" src="security group 2.jpg">
+  <img width="800" src="create ami.jpg">
 </p>
 
 <p align="center">
-  <img width="800" src="edit inbound rules 1.jpg">
+  <img width="800" src="create ami 2.jpg">
 </p>
 
 <p align="center">
-  <img width="800" src="edit inbound rules.jpg">
+  <img width="800" src="copy ami.jpg">
+</p>
+
+<p align="center">
+  <img width="800" src="copy ami 2.jpg">
+</p>
+
+<p align="center">
+  <img width="800" src="copy ami 3.jpg">
+</p>
+
+<p align="center">
+  <img width="800" src="copy ami 4.jpg">
+</p>
+
+<p align="center">
+  <img width="800" src="launch migrated instance 2.jpg">
+</p>
+
+<p align="center">
+  <img src="create key pair 2.jpg">
 </p>
 
 <p align="center">
   <img width="800" src="validation.jpg">
 </p>
+
+[video](video.mkv)
+
+<video controls>
+  <source src="video.mkv" type="video/mkv">
+</video>
