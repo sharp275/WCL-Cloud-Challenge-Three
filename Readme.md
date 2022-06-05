@@ -122,12 +122,4 @@ Code block
   <img width="800" src="validation.jpg">
 </p>
 
-<figure class="video_container">
-  <iframe src="https://youtu.be/q3K5KukYEyc" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
-
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="validation.jpg">
-    <source src="wcl lab 3 24fps.mp4" type="video/mp4">
-  </video>
-</figure>
+[![Video Example](https://img.youtube.com/vi/q3K5KukYEyc/0.jpg)](https://www.youtube.com/watch?v=q3K5KukYEyc)
