@@ -4,7 +4,9 @@ Whizlabs Challenge League
 
 <h2 align="center">
 Challenge Lab Three
+</h2>
 
+<h2 align="center">
 Inter-Region Instance Migration - EC2 Challenge
 </h2>
 
