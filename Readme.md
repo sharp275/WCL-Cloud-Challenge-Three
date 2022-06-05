@@ -123,5 +123,5 @@ Code block
 [video](video.mkv)
 
 <video controls>
-  <source src="video.mkv" type="video/mkv">
+  <source src="video.mp4" type="video/mp4">
 </video>
