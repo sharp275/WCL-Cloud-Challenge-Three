@@ -122,6 +122,6 @@ Code block
   <img width="800" src="validation.jpg">
 </p>
 
-<video controls>
-  <source src="wcl lab 3 24fps.mov" type="video/mov">
+<video width="720" height="1280" controls>
+  <source src="wcl lab 3 24fps 720p.mp4" type="video/mp4">
 </video>
