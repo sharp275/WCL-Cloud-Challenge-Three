@@ -120,8 +120,6 @@ Code block
   <img width="800" src="validation.jpg">
 </p>
 
-[video](video.mkv)
-
 <video controls>
-  <source src="video.mp4" type="video/mp4">
+  <source src="wcl lab 3 24fps.mp4" type="video/mp4">
 </video>
