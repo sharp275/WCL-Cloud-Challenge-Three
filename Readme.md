@@ -122,4 +122,6 @@ Code block
   <img width="800" src="validation.jpg">
 </p>
 
-[![Example](validation.jpg)](https://youtu.be/q3K5KukYEyc)
+<figure class="video_container">
+  <iframe src="https://youtu.be/q3K5KukYEyc" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
