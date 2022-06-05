@@ -124,4 +124,4 @@ Code block
 
 <h1>Video Example</h1>
 
-[![Video Example](inst.jpeg)](https://www.youtube.com/watch?v=q3K5KukYEyc)
+[![Video Example](vid.jpg)](https://www.youtube.com/watch?v=q3K5KukYEyc)
