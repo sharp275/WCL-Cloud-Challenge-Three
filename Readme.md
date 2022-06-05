@@ -123,5 +123,5 @@ Code block
 </p>
 
 <video controls>
-  <source src="wcl lab 3 24fps.mp4" type="video/mp4">
+  <source src="wcl lab 3 24fps.mov" type="video/mov">
 </video>
