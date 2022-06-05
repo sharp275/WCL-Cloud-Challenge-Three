@@ -36,7 +36,7 @@ In this challenge, you will use the AWS Management Console to complete the tasks
 
 ---
 
-<h3>1. Create an Elastic Beanstalk application.</h3>
+<h3>1. Create an Amazon EC2 instance.</h3>
 
 Login into AWS and search/choose *EC2*.
 
