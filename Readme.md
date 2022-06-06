@@ -78,9 +78,9 @@ Under Connection > SSH > Auth > Authentication parameters > Private key file for
 
 Within the terminal, input
 
-<code>sudo su\
-yum update -y\
-yum install httpd -y\
+<code>sudo su\n
+yum update -y\n
+yum install httpd -y\n
 nano /var/www/html/test.html
 </code>
 
