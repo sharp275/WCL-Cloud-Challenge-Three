@@ -49,8 +49,10 @@ Login into AWS and search/choose *EC2*.
 In EC2, click *Launch instance/launch instance*.
 
 <p align="center">
-  <img width="800" src="launch instance.jpg">
+  <img width="800" src="launch ec2.jpg">
 </p>
+
+Give the instance a name.  Create a key pair. If using Putty, make sure to select *.ppk*. Check *Allow HTTP traffic from the internet*. Click *Launch instance*.
 
 <p align="center">
   <img width="800" src="launch instance 2.jpeg">
