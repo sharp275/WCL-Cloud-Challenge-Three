@@ -85,7 +85,7 @@ yum install httpd -y
 nano /var/www/html/test.html
 ```
 
-With the nano editor, type <code>Whizlabs Test Page</code>.
+Within the nano editor, type <code>Whizlabs Test Page</code>.
 Press ctrl + X, type Y and hit enter.
 
 
