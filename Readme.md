@@ -43,19 +43,19 @@ In this challenge, you will use the AWS Management Console to complete the tasks
 Login into AWS and search/choose *EC2*.
 
 <p align="center">
-  <img width="800" src="AWS EC2 choose.jpeg">
+  <img width="1000" src="AWS EC2 choose.jpeg">
 </p>
 
 In EC2, click *Launch instance/launch instance*.
 
 <p align="center">
-  <img width="800" src="launch ec2.jpg">
+  <img width="1000" src="launch ec2.jpg">
 </p>
 
 Give the instance a name.  Create a key pair. If using Putty, make sure to select *.ppk*. Check *Allow HTTP traffic from the internet*. Click *Launch instance*.
 
 <p align="center">
-  <img width="800" src="launch instance 2.jpeg">
+  <img width="1000" src="launch instance 2.jpeg">
 </p>
 
 <p align="center">
@@ -65,7 +65,7 @@ Give the instance a name.  Create a key pair. If using Putty, make sure to selec
 Select the instance and click *Connect* to get the SSH details.
 
 <p align="center">
-  <img width="800" src="launch instance 3.jpg">
+  <img width="1000" src="launch instance 3.jpg">
 </p>
 
 <p align="center">
@@ -92,59 +92,59 @@ Press ctrl + X, type Y and hit enter.
 Back in AWS, navigate to **EC2** > **Elastic Block Store** > **Snapshots**, and click *create snapshot*.
 
 <p align="center">
-  <img width="800" src="create snapshot.jpg">
+  <img width="1000" src="create snapshot.jpg">
 </p>
 
 Select *Instance* under **Resource type** and choose the instance under **Instance ID**.  Click *Create snapshot*.
 
 <p align="center">
-  <img width="800" src="create snapshot 2.jpeg">
+  <img width="1000" src="create snapshot 2.jpeg">
 </p>
 
 Wait for the snapshot to be created.
 
 <p align="center">
-  <img width="800" src="create snapshot 3.jpeg">
+  <img width="1000" src="create snapshot 3.jpeg">
 </p>
 
 <p align="center">
-  <img width="800" src="create snapshot 4.jpeg">
+  <img width="1000" src="create snapshot 4.jpeg">
 </p>
 
 Under **Actions**, click *Create image from snapshot*.
 
 <p align="center">
-  <img width="800" src="create ami.jpg">
+  <img width="1000" src="create ami.jpg">
 </p>
 
 Input a name for the image and click *Create image*.
 
 <p align="center">
-  <img width="800" src="create ami 2.jpg">
+  <img width="1000" src="create ami 2.jpg">
 </p>
 
 Under **Images** > **AMIs** and **Actions**, click *Copy AMI*.
 
 <p align="center">
-  <img width="800" src="copy ami.jpg">
+  <img width="1000" src="copy ami.jpg">
 </p>
 
 Enter a name and select *Asia Pacific (Mumbai)*.  Click *Copy AMI*.
 
 <p align="center">
-  <img width="800" src="copy ami 2.jpg">
+  <img width="1000" src="copy ami 2.jpg">
 </p>
 
 Switch to *ap-south-1*  and wait for the copy to finish.
 
 <p align="center">
-  <img width="800" src="copy ami 3.jpg">
+  <img width="1000" src="copy ami 3.jpg">
 </p>
 
 Click *Launch instance from AMI*.
 
 <p align="center">
-  <img width="800" src="copy ami 4.jpg">
+  <img width="1000" src="copy ami 4.jpg">
 </p>
 
 Input a name.  From **My AMIs**, select the copied AMI.  Create a new key pair and ensure SSH and HTTP traffic are allowed.
@@ -152,7 +152,7 @@ Input a name.  From **My AMIs**, select the copied AMI.  Create a new key pair a
 Click *Launch instance*.
 
 <p align="center">
-  <img width="800" src="launch migrated instance 2.jpg">
+  <img width="1000" src="launch migrated instance 2.jpg">
 </p>
 
 <p align="center">
@@ -162,7 +162,7 @@ Click *Launch instance*.
 Lab is complete.
 
 <p align="center">
-  <img width="800" src="validation.jpg">
+  <img width="1000" src="validation.jpg">
 </p>
 
 <h1>Video Example</h1>
