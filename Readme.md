@@ -78,14 +78,16 @@ Under Connection > SSH > Auth > Authentication parameters > Private key file for
 
 Within the terminal, input
 
-<code>sudo su
+```
+
+sudo su
   
 yum update -y
   
 yum install httpd -y
   
 nano /var/www/html/test.html
-</code>
+```
 
 With the nano editor, type <code>Whizlabs Test Page</code>.
 Press ctrl + X, type Y and hit enter.
