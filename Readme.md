@@ -79,13 +79,9 @@ Under Connection > SSH > Auth > Authentication parameters > Private key file for
 Within the terminal, input
 
 ```
-
 sudo su
-  
 yum update -y
-  
 yum install httpd -y
-  
 nano /var/www/html/test.html
 ```
 
