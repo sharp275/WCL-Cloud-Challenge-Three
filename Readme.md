@@ -62,6 +62,8 @@ Give the instance a name.  Create a key pair. If using Putty, make sure to selec
   <img src="create key pair.jpg">
 </p>
 
+Select the instsance and click *Connect* to get the SSH details.
+
 <p align="center">
   <img width="800" src="launch instance 3.jpg">
 </p>
@@ -70,15 +72,35 @@ Give the instance a name.  Create a key pair. If using Putty, make sure to selec
   <img src="ssh.jpg">
 </p>
 
-Code block
+Within Putty, in Session under Host Name, input ec2-user@*instance-public-dns*.
+
+Under Connection > SSH > Auth > Authentication parameters > Private key file for authentication, broswe to and select the key file for the instance.
+
+Within the terminal, input
+
+<code>sudo su\
+yum update -y\
+yum install httpd -y\
+nano /var/www/html/test.html
+</code>
+
+With the nano editor, type <code>Whizlabs Test Page</code>.
+Press ctrl + X, type Y and hit enter.
+
+
+Back in AWS, navigate to **EC2** > **Elastic Block Store** > **Snapshots**, and click *create snapahot*.
 
 <p align="center">
   <img width="800" src="create snapshot.jpg">
 </p>
 
+Select *Instance* under **Resource type** and choose the instance under **Instance ID**.  Click *Create snapshot*.
+
 <p align="center">
   <img width="800" src="create snapshot 2.jpeg">
 </p>
+
+Wait for the sanpshot to be created.
 
 <p align="center">
   <img width="800" src="create snapshot 3.jpeg">
@@ -88,29 +110,45 @@ Code block
   <img width="800" src="create snapshot 4.jpeg">
 </p>
 
+Under **Actions**, click *Create image from snapshot*.
+
 <p align="center">
   <img width="800" src="create ami.jpg">
 </p>
+
+Input a name for the image and click *Create image*.
 
 <p align="center">
   <img width="800" src="create ami 2.jpg">
 </p>
 
+Under **Images** > **AMIs** and **Actions**, click *Copy AMI*.
+
 <p align="center">
   <img width="800" src="copy ami.jpg">
 </p>
+
+Enter a name and click *Copy AMI*.
 
 <p align="center">
   <img width="800" src="copy ami 2.jpg">
 </p>
 
+Switch to *ap-south-1*  and wait for the copy to finish.
+
 <p align="center">
   <img width="800" src="copy ami 3.jpg">
 </p>
 
+Click *Launch instance from AMI*.
+
 <p align="center">
   <img width="800" src="copy ami 4.jpg">
 </p>
+
+Input a name.  From **My AMIs**, select the copied ami.  Create a new key pair and ensure SSH and HTTP trafffic are allowed.
+
+Click *Launch instance*.
 
 <p align="center">
   <img width="800" src="launch migrated instance 2.jpg">
@@ -119,6 +157,8 @@ Code block
 <p align="center">
   <img src="create key pair 2.jpg">
 </p>
+
+Lab is complete.
 
 <p align="center">
   <img width="800" src="validation.jpg">
