@@ -128,7 +128,7 @@ Under **Images** > **AMIs** and **Actions**, click *Copy AMI*.
   <img width="800" src="copy ami.jpg">
 </p>
 
-Enter a name and click *Copy AMI*.
+Enter a name and select *Asia Pacific (Mumbai)*.  Click *Copy AMI*.
 
 <p align="center">
   <img width="800" src="copy ami 2.jpg">
