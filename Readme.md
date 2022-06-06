@@ -62,7 +62,7 @@ Give the instance a name.  Create a key pair. If using Putty, make sure to selec
   <img src="create key pair.jpg">
 </p>
 
-Select the instsance and click *Connect* to get the SSH details.
+Select the instance and click *Connect* to get the SSH details.
 
 <p align="center">
   <img width="800" src="launch instance 3.jpg">
@@ -74,7 +74,7 @@ Select the instsance and click *Connect* to get the SSH details.
 
 Within Putty, in Session under Host Name, input ec2-user@*instance-public-dns*.
 
-Under Connection > SSH > Auth > Authentication parameters > Private key file for authentication, broswe to and select the key file for the instance.
+Under Connection > SSH > Auth > Authentication parameters > Private key file for authentication, browse to and select the key file for the instance.
 
 Within the terminal, input
 
@@ -89,7 +89,7 @@ With the nano editor, type <code>Whizlabs Test Page</code>.
 Press ctrl + X, type Y and hit enter.
 
 
-Back in AWS, navigate to **EC2** > **Elastic Block Store** > **Snapshots**, and click *create snapahot*.
+Back in AWS, navigate to **EC2** > **Elastic Block Store** > **Snapshots**, and click *create snapshot*.
 
 <p align="center">
   <img width="800" src="create snapshot.jpg">
@@ -101,7 +101,7 @@ Select *Instance* under **Resource type** and choose the instance under **Instan
   <img width="800" src="create snapshot 2.jpeg">
 </p>
 
-Wait for the sanpshot to be created.
+Wait for the snapshot to be created.
 
 <p align="center">
   <img width="800" src="create snapshot 3.jpeg">
@@ -147,7 +147,7 @@ Click *Launch instance from AMI*.
   <img width="800" src="copy ami 4.jpg">
 </p>
 
-Input a name.  From **My AMIs**, select the copied ami.  Create a new key pair and ensure SSH and HTTP trafffic are allowed.
+Input a name.  From **My AMIs**, select the copied AMI.  Create a new key pair and ensure SSH and HTTP traffic are allowed.
 
 Click *Launch instance*.
 
